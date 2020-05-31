@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html class="has-navbar-fixed-top">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Scribre</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/smoothscroll.css">
+  </head>
+  <body>
+    <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand">
+        <a class="navbar-item" href="index.html" alt="scribre">
+          <img src="images/brand.png"/>
+        </a>
+
+        <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+
+      <div id="navbarBasicExample" class="navbar-menu">
+        <div class="navbar-start">
+         
+        </div>
+
+        <div class="navbar-end">
+          <a class="navbar-item" href="#features">
+            Features
+          </a>
+          <a class="navbar-item">
+            Contact
+          </a>
+          <!--
+          <div class="navbar-item">
+            <a href="index.html">en</a>
+            &nbsp;|&nbsp;
+            <a href="index.html"> de </a>
+          </div>
+          -->  
+        </div>
+      </div>
+    </nav>
+    <section class="hero is-fullheight-with-navbar">
+      <!-- LANDING CONTENT -->
+      <div class="hero-body">
+        <div class="container has-text-centered">
+          <div style="margin-bottom: 3rem; class="container has-text-centered">
+            <h1 class="title is-1 is-spaced">
+              <img src="images/logo.png" width=204 height=51>
+            </h1>
+            <h2 style="margin-bottom: 1rem;" class="subtitle is-3">
+              The new way to read PDF sheet music.
+            </h2>
+            <p>
+              Discover the app <strong><a data-scroll href="#whatisit" class="is-bold">here</a>.</strong>
+            </p>
+          </div>
+          <div class="container has-text-centered">
+              <p style="margin-bottom: 1rem;">Release Date:</p>
+              <img src="images/release_date.png" width=222 height=63>
+          </div>
+        </div>
+      </div>
+
+    </section>
+    <section id="whatisit" class="section is-large">
+      <div class="container has-text-centered">
+        <div class="columns">
+          <div class="column is-8-desktop is-offset-2-desktop">
+            <div class="content">
+              <p class="subtitle is-3">Scribre brings your PDF sheet music to the next level.
+                                It optimizes the <strong>reading experience</strong> and provides 
+                                the <strong>annotation tools</strong> every musician needs. 
+              </p>
+            </div>  
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="features" class="section is-large">
+      <div class="container">
+        <h1 class="title is-2">Features</h1>
+        <h2 class="subtitle">
+        </h2>
+        <div class="columns is-vcentered">
+          <div class="column">
+            <a href="#score_analysis"><div class="notification is-primary">Score Analysis</div></a>
+          </div>
+          <div class="column">
+            <a href="#segmentation"><div class="notification is-primary">Segmentation</div></a>
+          </div>
+          <div class="column">
+            <a href="#layout"><div class="notification is-primary">Layout Suggestion</div></a>
+          </div>
+          <div class="column">
+            <a href="#customization"><div class="notification is-primary">Layout Customization</div></a>
+          </div>
+          <div class="column">
+            <a href="#annotation"><div class="notification is-primary">Segmentation</div></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="score_analysis" class="section is-medium">
+      <div class="container has-text-centered">
+        <h1 class="title is-3">Score Analysis</h1>
+        <img src="images/score_analysis.png">
+      </div>
+    </section>
+    <section id="segmentation" class="section is-medium">
+      <div class="container has-text-centered">
+        <h1 class="title is-3">Segmentation</h1>
+        <img src="images/segmentation.png">
+      </div>
+    </section>
+    <section id="layout" class="section is-medium">
+      <div class="container">
+        <div class="tile is-ancestor">
+          <div class="tile is-6 is-vertical is-parent has-text-centered">
+            <div class="tile is-child">
+              <div id="layout_container" class="container is-flex">
+                <div class="column is-flex has-text-centered">
+                    <p class="title is-3">Layout suggestion</p>
+                    <p class="subtitle is-4">by considering your devices display dimensions.</p>
+                </div>
+              </div>
+            </div>
+            <div class="tile is-child">
+              <img src="images/layout_ipad.png">
+              <p>medium sized tablet</p>
+            </div>
+          </div>
+          <div class="tile is-parent has-text-centered">
+            <div class="tile is-child">              
+              <img src="images/layout_lenovo.png">
+              <p>2in1 Laptop</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    </section>
+    <section id="customization" class="section is-medium">
+      <div class="container has-text-centered">
+        <div class="tile is-ancestor">
+          <div class="tile is-vertical">
+            <div class="tile is-parent">
+              <div class="tile is-3 is-child">
+              </div>
+              <div class="tile is-6 is-child">
+                <img src="images/custom_layout_iPad.png">
+                <h1 style="margin-top: 1.5rem; margin-bottom:0.5rem" class="title is-3">Customize your score layout.</h1>
+              </div>
+              <div class="tile is-3 is-child">
+              </div>
+            </div>
+            <div class="tile is-parent">
+              <div class="tile is-child">
+                <img src="images/custom_layout_margin.png">
+              </div>
+              <div class="tile is-child">
+                <img src="images/custom_layout_paragraph.png">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="annotation" class="section is-medium">
+      <div class="container has-text-centered">
+        <h1 class="title is-3">Annotation</h1>
+        <img src="images/annotation.png">
+      </div>
+    </section>
+    <!--
+    <section id="pro_list" class="section is-medium">
+      <div class="container has-text-centered">
+        <p class="title is-3">Constant need to zoom and scroll</p>
+        <p class="title is-3">Staves being cut off</p>
+        <p class="title is-3">Need to buy digital versions of your sheet music</p>
+      </div>
+    </section>
+     <footer class="footer has-text-centered">
+      <div class="container">
+         <div class="columns">
+          <div class="column is-8-desktop is-offset-2-desktop">
+            <p>
+              <strong class="has-text-weight-semibold">
+                <a href="https://www.npmjs.com/package/bulma-start">bulma-start@0.0.4</a>
+              </strong>
+            </p>
+            <p>
+              <small>
+                Source code licensed <a href="http://opensource.org/licenses/mit-license.php">MIT</a>
+              </small>
+            </p>
+            <p style="margin-top: 1rem;">
+              <a href="http://bulma.io">
+                <img src="made-with-bulma.png" alt="Made with Bulma" width="128" height="24">
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  -->
+  </body>
+</html>

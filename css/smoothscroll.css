@@ -1,0 +1,21 @@
+/**
+ * Enable smooth scrolling on the whole document
+ */
+html {
+    scroll-behavior: smooth;
+}
+
+.is-vertical-center {
+    display: flex;
+    justify-content: center;
+}
+
+.column {
+  flex-direction: column;
+  justify-content: center;
+  display: flex
+}
+
+#layout_container {
+      height: 100%;
+}
