@@ -7,6 +7,7 @@
     <title>Scribre</title>
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/smoothscroll.css">
+    <script src="https://kit.fontawesome.com/b9f616cd79.js" crossorigin="anonymous"></script>
   </head>
   <body>
     <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
@@ -24,16 +25,17 @@
 
       <div id="navbarBasicExample" class="navbar-menu">
         <div class="navbar-start">
-         
+          <a class="navbar-item" href="index.html#home">Home</a>
+          <a class="navbar-item" href="index.html#features">
+            Features
+          </a>
+          <a class="navbar-item" href="index.html#contact">
+            Contact
+          </a>
         </div>
 
         <div class="navbar-end">
-          <a class="navbar-item" href="#features">
-            Features
-          </a>
-          <a class="navbar-item">
-            Contact
-          </a>
+          
           <!--
           <div class="navbar-item">
             <a href="index.html">en</a>
@@ -44,7 +46,7 @@
         </div>
       </div>
     </nav>
-    <section class="hero is-fullheight-with-navbar">
+    <section id="home" class="hero is-fullheight-with-navbar">
       <!-- LANDING CONTENT -->
       <div class="hero-body">
         <div class="container has-text-centered">
@@ -82,25 +84,25 @@
       </div>
     </section>
     <section id="features" class="section is-large">
-      <div class="container">
-        <h1 class="title is-2">Features</h1>
+      <div class="container has-text-centered">
+        <h1 style="margin-bottom:3rem;" class="title is-2">Features</h1>
         <h2 class="subtitle">
         </h2>
         <div class="columns is-vcentered">
           <div class="column">
-            <a href="#score_analysis"><div class="notification is-primary">Score Analysis</div></a>
+            <a href="#score_analysis"><button class="button is-medium is-info is-light">Score Analysis</button></a>
           </div>
           <div class="column">
-            <a href="#segmentation"><div class="notification is-primary">Segmentation</div></a>
+            <a href="#segmentation"><button class="button is-medium is-success is-light">Segmentation</button></a>
           </div>
           <div class="column">
-            <a href="#layout"><div class="notification is-primary">Layout Suggestion</div></a>
+            <a href="#layout"><button class="button is-medium is-warning is-light">Layout Suggestion</button></a>
           </div>
           <div class="column">
-            <a href="#customization"><div class="notification is-primary">Layout Customization</div></a>
+            <a href="#customization"><button class="button is-medium is-danger is-light">Layout Customization</button></a>
           </div>
           <div class="column">
-            <a href="#annotation"><div class="notification is-primary">Segmentation</div></a>
+            <a href="#annotation"><button class="button is-medium is-link is-light">Annotation</button></a>
           </div>
         </div>
       </div>
@@ -125,7 +127,7 @@
               <div id="layout_container" class="container is-flex">
                 <div class="column is-flex has-text-centered">
                     <p class="title is-3">Layout suggestion</p>
-                    <p class="subtitle is-4">by considering your devices display dimensions.</p>
+                    <p class="subtitle is-4">by considering your device's display dimensions.</p>
                 </div>
               </div>
             </div>
@@ -153,7 +155,7 @@
               </div>
               <div class="tile is-6 is-child">
                 <img src="images/custom_layout_iPad.png">
-                <h1 style="margin-top: 1.5rem; margin-bottom:0.5rem" class="title is-3">Customize your score layout.</h1>
+                <h1 style="margin-top: 1.5rem; margin-bottom:0.5rem" class="title is-3">Layout Customization</h1>
               </div>
               <div class="tile is-3 is-child">
               </div>
@@ -176,37 +178,94 @@
         <img src="images/annotation2.png">
       </div>
     </section>
-    <!--
     <section id="pro_list" class="section is-medium">
-      <div class="container has-text-centered">
-        <p class="title is-3">Constant need to zoom and scroll</p>
-        <p class="title is-3">Staves being cut off</p>
-        <p class="title is-3">Need to buy digital versions of your sheet music</p>
+      <div class="container">
+        <div class="columns is-centered"
+          <div class="column is-half">
+            <div class="content">
+
+            <h1 class="title is-3">Scribre...</h1>
+              <ul>
+                <li><p class="subtitle is-4">gets rid of the constant need to zoom and scroll.</p></li>
+                <li><p class="subtitle is-4">prevents staves and music systems from being cut off.</p></li>
+                <li><p class="subtitle is-4">allows you to use your own PDF library.</p></li>
+                <li><p class="subtitle is-4">does not require buying digital versions of sheet music.</p></li>
+              </ul>
+            </div>
+          </div>
+        </div> 
       </div>
     </section>
-     <footer class="footer has-text-centered">
+
+    <section id="contact" class="section is-large">
+      <div class="container has-text-centered">
+        <p class="title is-3">Contact</p>
+        <p class="subtitle"></p>
+        <p class="subtitle"><a href="mailto:scribre.music@gmail.com">scribre.music@gmail.com</a></p>
+
+      </div>
+    </section>
+    <!--
+    <section class="section is-medium">
       <div class="container">
-         <div class="columns">
-          <div class="column is-8-desktop is-offset-2-desktop">
+        <div class="field">
+          <label class="label">Name</label>
+          <div class="control">
+            <input class="input" type="text" placeholder="Text input">
+          </div>
+        </div>
+
+        <div class="field">
+          <label class="label">Email</label>
+          <div class="control has-icons-left has-icons-right">
+            <input class="input" type="email" placeholder="Email" value="">
+            <span class="icon is-small is-left">
+              <i class="fas fa-envelope"></i>
+            </span>
+          </div>
+        </div>
+
+        <div class="field">
+          <label class="label">Subject</label>
+          <div class="control">
+            <input class="input" type="text" placeholder="Subject">
+          </div>
+        </div>
+
+        <div class="field">
+          <label class="label">Message</label>
+          <div class="control">
+            <textarea class="textarea" placeholder="Your message..."></textarea>
+          </div>
+        </div>
+
+        <div class="field is-grouped is-grouped-right">
+          <div class="control">
+            <button class="button is-link">Submit</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    -->
+     <footer class="footer has-text-centered">
+      <div class="container is-fluid">
             <p>
               <strong class="has-text-weight-semibold">
-                <a href="https://www.npmjs.com/package/bulma-start">bulma-start@0.0.4</a>
+                <a >Quoc Duong Bui © 2020</a>
               </strong>
             </p>
             <p>
               <small>
-                Source code licensed <a href="http://opensource.org/licenses/mit-license.php">MIT</a>
+                <a style="color: #000000;" href="legaldisclosure.html">Legal Disclosure</a>
               </small>
             </p>
-            <p style="margin-top: 1rem;">
-              <a href="http://bulma.io">
-                <img src="made-with-bulma.png" alt="Made with Bulma" width="128" height="24">
-              </a>
+            <p>
+              <small>
+                <a style="color: #000000;" href="privacypolicy.html">Privacy Policy</a>
+              </small>
             </p>
-          </div>
-        </div>
       </div>
     </footer>
-  -->
   </body>
+  <script src="javascript/navburger.js"></script>
 </html>
