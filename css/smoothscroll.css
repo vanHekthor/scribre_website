@@ -17,5 +17,11 @@ html {
 }
 
 #layout_container {
-      height: 100%;
+  height: 100%;
+}
+
+.navbar-burger.is-marginless {
+  height: auto;
+  width: auto; 
+  align-items: stretch;
 }

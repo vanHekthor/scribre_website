@@ -5,6 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Check if there are any navbar burgers
   if ($navbarBurgers.length > 0) {
+    const $languageItem = document.getElementById('switch_language');
 
     // Add a click event on each of them
     $navbarBurgers.forEach( el => {
@@ -17,7 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
         // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
         el.classList.toggle('is-active');
         $target.classList.toggle('is-active');
-
+        $languageItem.style.display="none"; 
       });
     });
   }
